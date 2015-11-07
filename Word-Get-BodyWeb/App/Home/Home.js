@@ -1,5 +1,4 @@
-﻿
-(function () {
+﻿(function () {
     "use strict";
 
     // The initialize function must be run each time a new page is loaded
@@ -12,20 +11,18 @@
 
     function getBodyText() {
         Word.run(function (context) {
-
             // Get the current document's body
             var body = context.document.body;
-
-            // Request the text from the document's body. 
+            context.document.body.
+            // Request the text from the document's body.
             context.load(body, 'text');
 
             // Request the HTML representation of the body as well
             var bodyHTML = body.getHtml();
 
-            // Synchronize the document state by executing the queued commands, 
+            // Synchronize the document state by executing the queued commands,
             // and return once the task has task completion.
             return context.sync().then(function () {
-
                 // Add the raw text to the docText <div/>
                 $('#docText').html(body.text);
 

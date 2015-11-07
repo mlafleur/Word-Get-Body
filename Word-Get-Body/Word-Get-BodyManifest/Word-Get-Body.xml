@@ -3,10 +3,11 @@
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
   <Id>959f89e2-683e-4bf2-b0b6-4a17f224fdc9</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>[Provider name]</ProviderName>
+  <ProviderName>Marc LaFleur</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Word-Get-Body" />
-  <Description DefaultValue="Word-Get-Body"/>
+  <Description DefaultValue="Office 365 Ad-in Sample&#xD;&#xA;Fetch a Word document's entire body as both Text and HTML"/>
+  <SupportUrl DefaultValue="http://dev.office.com" />
   <Hosts>
     <Host Name="Document" />
   </Hosts>
